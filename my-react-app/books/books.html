@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Tailwind OKKY PRIVATE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col h-screen">
+
+    <header>
+      <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="sm:hidden">
+                <button
+                  id="m-menu-button"
+                  type="button"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  onclick="toggleMobileMenu()"
+                  class="text-white">
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="w-6 h-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5
+                                    M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden sm:block">
+                <img
+                  src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg"
+                  alt="RevoU
+                            Library"
+                  class="h-8 w-auto ml-2 sm:ml-0" />
+              </div>
+              <div class="hidden space-x-4 sm:ml-6 sm:block">
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Library</a
+                >
+                <a
+                  href="books.html"
+                  class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Books</a
+                >
+                <a
+                  href="information.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Information</a
+                >
+              </div>
+            </div>
+            <div class="absolute left-1/2 transform -translate-x-1/2 sm:hidden">
+              <img
+                src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg"
+                alt="RevoU Library"
+                class="h-8 w-auto ml-2 sm:ml-0" />
+            </div>
+          </div>
+        </div>
+        <div id="m-menu" class="hidden sm:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="index.html"
+              class="block px-3 py-2 text-white hover:text-gray-300"
+              >Library</a
+            >
+            <a
+              href="books.html"
+              class="block px-3 py-2 text-white hover:text-gray-300"
+              >Books</a
+            >
+            <a
+              href="information.html"
+              class="block px-3 py-2 text-white hover:text-gray-300"
+              >Information</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+      <main
+        class="flex-1 overflow-y-auto bg-library-2 bg-cover bg-center bg-no-repeat">
+        <div
+          class="container mx-auto my-3 max-w-screen-xl sm:px-6 lg:px-8 bg-gray-800 rounded-lg py-8">
+          <div class="text-center">
+            <nav id="top-pagination" class="mb-8">
+              <!-- Top Pagination will be rendered here -->
+            </nav>
+            <section
+              id="books"
+              class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <!-- Book cards will be rendered here -->
+            </section>
+            <nav id="bottom-pagination" class="mt-8">
+              <!-- Pagination will be rendered here -->
+            </nav>
+          </div>
+        </div>
+      </main>
+
+      <footer class="py-3 bg-gray-800">
+        <p class="text-center text-xs leading-relaxed text-gray-300">Library</p>
+      </footer>
+    </div>
+    <script src="/books/books.js"></script>
+  </body>
+</html>
