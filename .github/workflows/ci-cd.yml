@@ -1,0 +1,22 @@
+name: CI / CD branch development
+
+on:
+   push:
+      branches: [main]
+   pull_request:
+      branches: [main]
+
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+         - name: executing remote ssh commands using password
+           uses: appleboy/ssh-action@master
+           with:
+              port: 80
+              script: |
+                 cd ~/app/react-app
+                 docker container rm -f react-app
+                 git pull origin  
+                 docker build -t react-app:latest . 
+                 docker container run -d --name react-app -p 80:1234 react-app:latest
