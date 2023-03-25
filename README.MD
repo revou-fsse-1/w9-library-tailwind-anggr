@@ -40,14 +40,16 @@ This is a list of requirements for a web development assignment that involves cr
 -  Javascript
 -  Tailwind CSS
 -  Prettier
+- ParcelJS
+- ReactJS
 
 ### What I learned
 
--
-
+- Tailwind gives a lot of flexibility: Tailwind makes it easy to create a responsive website. I can easily change the size of the elements, the color, the font, and the spacing. This also makee Tailwind more flexible and easier to change in the future.
+- Easy customization:  Tailwind CSS offers a huge array of classes that allow for easy customization of website design without writing much CSS code. It imposes limitations that make designs more coherent and consistent. This flexibility and design system make Tailwind a preferable alternative to Bootstrap.
 ### Continued development
 
--  I'd like to improve
+-  I'd like to improve responsiveness of the website.
 
 ## Author
 
