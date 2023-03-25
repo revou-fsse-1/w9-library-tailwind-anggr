@@ -1,5 +1,5 @@
 import React from "react";
-import LibrarySearch from "./components/LibrarySearch-1";
+import LibrarySearch from "./components/LibrarySearch";
 
 const App = () => {
   return <LibrarySearch />;
