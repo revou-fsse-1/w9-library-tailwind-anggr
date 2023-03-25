@@ -15,7 +15,7 @@ jobs:
            with:
               port: 80
               script: |
-                 cd ~/app/react-app
+                 cd ~/app/my-react-app
                  docker container rm -f react-app
                  git pull origin  
                  docker build -t react-app:latest . 
